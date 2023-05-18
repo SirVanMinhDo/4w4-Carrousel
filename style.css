@@ -1,13 +1,14 @@
 .carrousel {
-  position: absolute;
+  position: fixed;
   width: 50%;
   height: 50%;
   top: 25%;
   left: 25%;
   border: 1px solid #aaa;
-  background-color: aquamarine;
+  background-color: rgb(177, 52, 52);
   transform: scale(0);
   transition: transform 0.5s;
+  overflow: hidden;
 }
 
 .carrousel--activer {
@@ -17,6 +18,20 @@
 .carrousel__x {
   position: absolute;
   top: 3px;
+  right: 3px;
+  z-index: 3;
+}
+
+.carrousel__precedant {
+  position: absolute;
+  bottom: 50%;
+  left: 3px;
+  z-index: 3;
+}
+
+.carrousel__suivant {
+  position: absolute;
+  bottom: 50%;
   right: 3px;
   z-index: 3;
 }
